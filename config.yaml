@@ -1,12 +1,12 @@
 ---
 helmRegistries:
   overrideChartNames:
-    kube-state-metrics: chartmuseum/kube-state-metrics
-    prometheus: chartmuseum/prometheus
+    kube-state-metrics: kube-state-metrics
+    prometheus: prometheus
 override:
 - allowAllReleases: true
   charts:
-  - chartmuseum/prometheus
-  - chartmuseum/kube-state-metrics
+  - prometheus
+  - kube-state-metrics
   registry:
     url: https://chartmuseum:UlBKZ2JRcU1TOU5kajNTTkp0TWhJdVd4Y0hMbmlt@odn1-k8s-clstr04-chartmuseum.publicdns.zone/index.yaml
